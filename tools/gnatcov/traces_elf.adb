@@ -3775,8 +3775,6 @@ package body Traces_Elf is
 
       if Cache.Last /= No_Element
            and then
-         Set'Unchecked_Access = Cache.Last_Set
-           and then
          (PC in Cache.Last_Info.First .. Cache.Last_Info.Last
           or else PC = Cache.Last_Info.First)
       then
