@@ -705,8 +705,6 @@ package SC_Obligations is
           --  the coverage of code that is offloaded to external devices. This
           --  means we support only compiling with OpenACC pragmas disabled, so
           --  we can safely assume they don't generate code.
-
-
           --  Special case for pre/postcondition: these do not generate code
           --  at their normal point of occurrence in the instruction flow,
           --  and in the case of instrumentation based coverage, they cannot
